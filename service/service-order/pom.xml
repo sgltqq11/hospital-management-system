@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-user</artifactId>
+    <artifactId>service-order</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -22,16 +22,29 @@
             <artifactId>service-cmn-client</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>com.sgl</groupId>
+            <artifactId>service-hosp-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
-    <build>
-        <finalName>service-user</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+        <dependency>
+            <groupId>com.sgl</groupId>
+            <artifactId>service-user-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sgl</groupId>
+            <artifactId>rabbit-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.wxpay</groupId>
+            <artifactId>wxpay-sdk</artifactId>
+            <version>0.0.3</version>
+        </dependency>
+    </dependencies>
 
 </project>

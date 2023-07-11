@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-user</artifactId>
+    <artifactId>service-hosp</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,14 +18,25 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.sgl</groupId>
             <artifactId>service-cmn-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sgl</groupId>
+            <artifactId>rabbit-util</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>service-user</finalName>
+        <finalName>service-hosp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -33,5 +44,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
